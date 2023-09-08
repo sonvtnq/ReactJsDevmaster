@@ -1,0 +1,36 @@
+========Thực hiện mini project 1
+===== Student management system
+#1. Download template được cung cấp
+#2. Tạo ứng dụng mini-project-1 
+#3. Chuyển thiết kế từ html sang jsx bằng công cụ transform.tool
+    - transform.tool    
+        + index.html - > jsx
+        + coppy jsx -> App (class component)
+    - coppy: file tài nguyên (css, images, js,...)
+        vào thư mục public của ứng dụng reactjs (mini-project-1)
+    - Liên kết (.css, .js) trong file index.html của react (mini-project-1)
+#4. Phân chia ứng dụng thành các component (class component)
+-App:
+    + Title.js
+    + Control.js 
+    + ListStudent
+        + Student 
+    + Form 
+#5. Tách các thành phần giao diện 
+#6. Tổ chức dữ liệu trong state của App 
+    * render dữ liệu trên ListStudent 
+    - App: (state)
+        -> (render)->ListStudent (render) -> student:
+#7. Chức năng ẩn hiện Form  
+    - Thêm, sửa, xóa, xem
+    - render có điều kiện
+        + istoggle (true/false)
+        + Thêm -> actionName: Addnew
+        + Sửa -> actionName: Update
+        + Xóa -> actionName: Delete
+        + Xem -> actionName: close
+#8. Click button thêm mới
+    - control -> event -> handleAdd(toogle) -> App 
+    - App: 
+        setState: istoggle = toogle 
+        
