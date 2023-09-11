@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.App{
+    width: 100%;
+}
+.list-product{
+    width: 50%;
+}
+.row{
+    display: flex;
+}
+.row-head{
+    font-weight: 600;
+}

@@ -1,0 +1,40 @@
+.App{
+    margin-left: 50px;
+    margin-top: 30px;
+    width: 400px;
+}
+
+.input{
+    display: flex;
+    width: 100%;
+    border: 1px solid rgb(202, 202, 202);
+    box-sizing: border-box;
+    margin: .75rem 0;
+    & p,input{
+        padding: .25rem .5rem;
+    }
+    & input{
+        border: none;
+        flex-grow: 1;
+    }
+    & p{
+        /* flex-grow: 1; */
+        background-color: #e9ecef;
+        border-right: 1px solid rgb(202, 202, 202);
+    }
+}
+h3{
+    margin: 1rem 0;
+}
+#userName{
+    background-color: red;
+    color: #fff;
+    padding: .5rem;
+    border-radius: 8px;
+}
+#courseName{
+    background-color: green;
+    color:#fff;
+    padding: .5rem;
+    border-radius: 8px;
+}
