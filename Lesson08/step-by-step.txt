@@ -1,0 +1,60 @@
+*Mini project 2 - shopping cart
+1. Tạo project - mini - shoppingcart ( mini-project-2 )
+2. cd vào react-app vừa Tạo 
+    - cài redux
+3. Chuyển template từ html -> jsx
+    - Coppy file tài nguyên (css, fonts, images, js) từ template vào public của ứng dụng
+    - coppy mã jsx -> App.js
+    - Tạo liên kết tài nguyên (css,js)
+4. phân chia component 
+5. Tổ chức cấu trúc của react redux
+    src: 
+        + component (view)
+        + actions ( xác định các actions trong ứng dụng )
+        + constants (xác định các hằng số của ứng dụng)
+        + reducer (tạo các reducer để làm thay đổi dữ liệu)
+        + store ( tổ chức kho dữ liệu)
+6. Tổ chức các component
+7. Tạo các constants cho ứng dụng
+    - actionTypes.js
+        +Xử lý các thông tin crud cho ứng dụng
+            ++ Load Products: "LIST_PRODUCTS"
+            ++ Mua hàng  : "BUY_ITEM"
+            ++ Cập nhật cart : "UPDATE_ITEM"
+            ++ Xóa sản phẩm khỏi giỏ hàng: "DELETE_ITEM"
+    - message.js
+        + thông báo tương ứng với các chức năng
+            ++ MSG_LOAD_SUCESS: 
+            ++ MSG_BUY_SUCESS
+            ++ MSG_UPDATE_SUCESS
+            ++ MSG_DELETE_SUCESS
+8. Xác định các chức năng trong hệ thống: (action)
+    action {type:... ,data:... }
+    - Chức năng hiển thị thông tin sản phẩm
+        act-list_products
+            return {type:...}
+    - Chức năng mua hàng: Thêm sản phẩm vào giỏ hàng
+        act_buyt_item: (product, quantity)=>
+            reutrn {
+                type: 
+                products,
+                quantity
+            }
+    - Chức năng cập nhật giỏ hàng 
+        act_update_item (product, quantity) => retwurn
+    - Chức năng xóa sản phẩm trong giỏ hàng
+        act_delete_item (product) => return {}
+    - chức năng thông báo
+9. Xử lý action trong reducer 
+    Tạo các reducer đẻ xử lý các actions tương ứng
+        - Listproduct.js trạng thái dữ liệu cho listproduct
+        - notidy.js 
+        - cart.js 
+        - index.js kết hợp quản lý trạng thái cho ứng dụng
+10. Tạo store cho ứng dụng
+    index.js 
+11. Cung cấp store cho ứng dụng
+    Provider của react-redux
+12. connect store với component ( ListProduct )
+    - sử dụng hàm connect của react-redux 
+    - mapStateToProp
